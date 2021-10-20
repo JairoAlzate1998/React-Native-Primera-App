@@ -1,12 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, useWindowDimensions, View} from 'react-native';
-import {Dimensions} from 'react-native';
+//import {Dimensions} from 'react-native';
 
 //const {width, height} = Dimensions.get('window'); No cambia las dimensiones si se voltea el celular
 
 export const DimensionesScreen = () => {
-
-    const {width, height} = useWindowDimensions(); // si cambia las dimensiones si se voltea el celular
+  const {width, height} = useWindowDimensions(); // si cambia las dimensiones si se voltea el celular
 
   return (
     <View>
@@ -37,6 +36,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 30,
-    textAlign: 'center'
+    textAlign: 'center',
   },
 });
